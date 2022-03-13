@@ -1,6 +1,6 @@
 # Zaimplementuj podaną na zajęciach klasę reprezentującą ulamek:
 
-1. Nazwa klasy Fraction), po której zdefiniowaniu zmień: w makrze
+1. Nazwa klasy Fraction, po której zdefiniowaniu zmień: w makrze
    `IMPLEMENTED_classFractionExists 0` -> `IMPLEMENTED_classFractionExists 1`
 2. Do klasy dodaj pola protected:
    `numerator` (licznik) i `denominator` (mianownik)
