@@ -9,7 +9,7 @@ if (NOT CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
     set(COMPILER_DEBUG_FLAGS "-D_DEBUG")
     set(COMPILER_RELEASE_FLAGS "-O3 -DNDEBUG")
     set(LINKER_FLAGS "--std=c++17")
-endif()
+endif ()
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)  # for cppcheck
 
@@ -32,10 +32,10 @@ add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES})
 
 ############ KOMENDA: make run
 add_custom_target(run
-    COMMAND ${PROJECT_NAME}
-    DEPENDS ${PROJECT_NAME}
-    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-)
+        COMMAND ${PROJECT_NAME}
+        DEPENDS ${PROJECT_NAME}
+        WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+        )
 
 
 ############ KOMENDA: make valgrind_${PROJECT_NAME}
@@ -43,8 +43,8 @@ find_program(VALGRIND NAMES valgrind)
 if (VALGRIND)
     message("\t* valgrind found: ${VALGRIND}")
     add_custom_target(valgrind_${PROJECT_NAME} DEPENDS ${PROJECT_NAME}
-        COMMAND ${VALGRIND} --leak-check=full ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${PROJECT_NAME})
-endif()
+            COMMAND ${VALGRIND} --leak-check=full ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${PROJECT_NAME})
+endif ()
 
 
 ############ KOMENDA: make docs
@@ -54,7 +54,7 @@ if (DOXYGEN)
     add_custom_target(docs
             COMMAND ${DOXYGEN} ${CMAKE_CURRENT_SOURCE_DIR} && make -C ${CMAKE_CURRENT_SOURCE_DIR}/latex && cp latex/refman.pdf ${CMAKE_CURRENT_BINARY_DIR}/trescWygenerowana.pdf
             WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
-endif()
+endif ()
 
 
 ############ KOMENDA: make zip
