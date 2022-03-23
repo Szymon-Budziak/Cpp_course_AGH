@@ -1,9 +1,71 @@
-# Exercises_1
-Exercises_1/trescWygenerowana.pdf
-Exercises_1/fraction.h.gch
-Exercises_1/doxyfiles/
-Exercises_1/src/fraction
-Exercises_1/src/main
-Exercises_1/doxyfiles
-Exercises_1/tests/lib
-Exercises_1/tests/cmake-build-debug
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+# My folders and files
+# Exercise_1
+Exercise_1/trescWygenerowana.pdf
+Exercise_1/fraction.h.gch
+Exercise_1/doxyfiles/
+Exercise_1/src/fraction
+Exercise_1/src/main
+Exercise_1/doxyfiles
+Exercise_1/tests/lib
+Exercise_1/cmake-build-debug
+Exercise_1/main.cpp
+Exercise_1/tests/cmake-build-debug
+
+# Exercises_2
+Exercises_2/trescPdf.pdf
+Exercises_2/doxyfiles
+Exercises_2/cmake-build-debug
+Exercises_2/tests/cmake-build-debug
+Exercises_2/main.cpp
