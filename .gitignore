@@ -62,6 +62,7 @@ Exercise_1/tests/lib
 Exercise_1/cmake-build-debug
 Exercise_1/main.cpp
 Exercise_1/tests/cmake-build-debug
+.idea/
 
 # Exercises_2
 Exercises_2/trescPdf.pdf
