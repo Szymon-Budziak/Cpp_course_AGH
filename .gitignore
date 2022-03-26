@@ -64,9 +64,10 @@ Exercise_1/main.cpp
 Exercise_1/tests/cmake-build-debug
 .idea/
 
-# Exercises_2
-Exercises_2/trescPdf.pdf
-Exercises_2/doxyfiles
-Exercises_2/cmake-build-debug
-Exercises_2/tests/cmake-build-debug
-Exercises_2/main.cpp
+# a
+Exercise_2/trescPdf.pdf
+Exercise_2/doxyfiles
+Exercise_2/cmake-build-debug
+Exercise_2/tests/cmake-build-debug
+Exercise_2/main.cpp
+Exercise_2/tests/lib
