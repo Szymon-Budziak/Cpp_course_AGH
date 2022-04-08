@@ -73,3 +73,8 @@ Lab_2/main.cpp
 Lab_2/tests/lib
 
 # Lab_3
+Lab_3/main.cpp
+Lab_3/doxyfiles
+Lab_3/tests/lib
+Lab_3/tests/cmake-build-debug
+Lab_3/cmake-build-debug
