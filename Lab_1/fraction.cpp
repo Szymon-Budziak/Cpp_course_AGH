@@ -1,4 +1,5 @@
 #include <iostream>
+#include <utility>
 #include "fraction.h"
 
 using namespace std;
@@ -6,8 +7,8 @@ using namespace std;
 // constructor
 int Fraction::removedFractions_ = 0;
 
-Fraction::Fraction(int newNumerator, int newDenominator, string newName) :
-        numerator(newNumerator), denominator(newDenominator), fractionName(newName) {
+Fraction::Fraction(int newNumerator, int newDenominator, std::string newName) :
+        numerator(newNumerator), denominator(newDenominator), fractionName(std::move(newName)) {
 }
 
 // setters

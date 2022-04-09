@@ -1,5 +1,5 @@
 #include <iostream>
-#include <type_traits>>
+#include <type_traits>
 #include <gtest/gtest.h>
 
 #if __has_include("../fraction.h")
@@ -57,7 +57,7 @@ TEST_F(FractionTester, hasNumeratorAndDenominator) {
 
 TEST_F(FractionTester, checkIfHasDefaultConstructor) {
 #if IMPLEMENTED_classFractionExists && IMPLEMENTED_hasDefaultConstructor
-    ASSERT_TRUE(is_default_constructible_v < Fraction >) << "Constructor not implemented";
+    ASSERT_TRUE(is_default_constructible_v<Fraction>) << "Constructor not implemented";
 #else
     ADD_FAILURE() << "Class not implemented!";
 #endif
@@ -65,7 +65,7 @@ TEST_F(FractionTester, checkIfHasDefaultConstructor) {
 
 TEST_F(FractionTester, hasConstructorWhichInitialiseNumeratorAndDenominator) {
 #if IMPLEMENTED_hasNumeratorAndDenominator
-    static_assert(is_constructible_v < Fraction, int, int > , "Valid constructor not implemented!");
+    static_assert(is_constructible_v<Fraction, int, int>, "Valid constructor not implemented!");
 
     struct FractionWrapper : public Fraction {
         using Fraction::numerator;
@@ -165,7 +165,7 @@ TEST_F(FractionTester, loadImplemented) {
 
 TEST_F(FractionTester, fractionNameSettableFromConstructor) {
 #if IMPLEMENTED_fractionNameSettableFromConstructor
-    static_assert(is_constructible_v < Fraction, int, int, string > , "Constructor not implemented!");
+    static_assert(is_constructible_v<Fraction, int, int, string>, "Constructor not implemented!");
 
     constexpr int numerator = 3, denominator = 4;
     const string fractionName("polowka");
@@ -182,7 +182,7 @@ TEST_F(FractionTester, fractionNameSettableFromConstructor) {
 
 TEST_F(FractionTester, fractionGettersAreConst) {
 #if IMPLEMENTED_fractionNameSettableFromConstructor
-    static_assert(is_constructible_v < Fraction, int, int, string > , "Constructor not implemented!");
+    static_assert(is_constructible_v<Fraction, int, int, string>, "Constructor not implemented!");
 
     constexpr int numerator = 2, denominator = 4;
     const string fractionName("polowka");
@@ -199,7 +199,7 @@ TEST_F(FractionTester, fractionGettersAreConst) {
 
 TEST_F(FractionTester, fractionConstStaticFieldsImplemented) {
 #if IMPLEMENTED_fractionNameSettableFromConstructor
-    static_assert(is_constructible_v < Fraction, int, int, string > , "Constructor not implemented!");
+    static_assert(is_constructible_v<Fraction, int, int, string>, "Constructor not implemented!");
     constexpr int defaultDenominatorValue = 1, invalidDenominatorValue = 0;
 
     ASSERT_EQ(defaultDenominatorValue, Fraction::getDefaultDenominatorValue());

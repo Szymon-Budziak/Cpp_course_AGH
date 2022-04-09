@@ -44,6 +44,17 @@
     następnie ustaw jedynkę obok `IMPLEMENTED_fractionConstStaticFieldsImplemented`
 **/
 
+#define IMPLEMENTED_classFractionExists 1
+#define IMPLEMENTED_hasNumeratorAndDenominator 1
+#define IMPLEMENTED_hasDefaultConstructor 1
+#define IMPLEMENTED_hasConstructorWhichInitialiseFields 1
+#define IMPLEMENTED_hasGettersAndSetters 1
+#define IMPLEMENTED_hasPrintFunction 1
+#define IMPLEMENTED_counterOfDestructedFractionsImplemented 1
+#define IMPLEMENTED_readWriteImplemented 1
+#define IMPLEMENTED_fractionNameSettableFromConstructor 1
+#define IMPLEMENTED_fractionConstStaticFieldsImplemented 1
+
 class Fraction {
 protected:
     int numerator, denominator;
@@ -61,9 +72,9 @@ public:
     void setDenominator(int denominator);
 
     // getters
-    int getNumerator() const;
+    [[nodiscard]] int getNumerator() const;
 
-    int getDenominator() const;
+    [[nodiscard]] int getDenominator() const;
 
     // print method
     void print() const;
@@ -80,7 +91,7 @@ public:
     void load(std::istream &is);
 
     // fractionName
-    std::string getFractionName() const;
+    [[nodiscard]] std::string getFractionName() const;
 
     // static methods
     static int getInvalidDenominatorValue();
