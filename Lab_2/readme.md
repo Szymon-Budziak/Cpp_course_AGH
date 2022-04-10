@@ -1,5 +1,4 @@
-# Przeciążanie operatorów na przykładzie Macierzy:
-
+# Przeciążanie operatorów na przykładzie Macierzy
 1. Zaimplementuj klasę TwoDimensionMatrix odzwierciedlajaca macierz 2*2, zawierającą:
     - tablice typu MatrixElement (tzn. int), oraz size (=2)
     - konstruktory:
