@@ -85,3 +85,12 @@ Lab_4/doxyfiles
 Lab_4/cmake-build-debug
 Lab_4/tests/cmake-build-debug
 /Lab_4/tests/lib
+
+# Lab_5
+Lab_5/cmake-build-debug
+Lab_5/tests/cmake-build-debug
+Lab_5/tests/lib
+Lab_5/main.cpp
+Lab_5/trescWygenerowana_dlaStudentow.pdf
+
+# Lab_6
